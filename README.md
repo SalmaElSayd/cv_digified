@@ -38,7 +38,7 @@
     - The resizing and scaling were moved to the frame reading function to be able to pass the whole array of frames at once to the model instead of repeatedly calling test_one(frame)
     - Predict() was replaced with simply calling the model since the predict function in keras has a lot of processing overhead which is not needed in this case and slows down the process.
     
-    For a 6 second video. these modifications reduced prediction time from ~14 seconds to ~2 seconds.
+    **For a 6 second video. these modifications reduced prediction time from ~14 seconds to ~2 seconds. The prediction time is printed by the application and can be viewed in the console.**
     
     after these modifications however the application still takes some time to run which is mostly the time taken to save the video.
     
@@ -57,3 +57,4 @@
 6. Deployment
     
     A docker image was built from a DockerFile however it could not be accessed from the browser. Due to time constraint, I could not fully investigate this issue and resolve it.
+    **To build the docker image, run the DockerFile included in the main project directory.**
