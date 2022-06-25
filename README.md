@@ -6,6 +6,8 @@
 3. drag and drop a video into the upload box
 4. click upload to get the video's score
 
+
+## CV Task Report
 1. Preprocessing 
     
     video is read from directory frame by frame using opencv VideoCapture and loaded into an array.
